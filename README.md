@@ -16,6 +16,6 @@
 
 **TESTS COVERAGE**
 
-- ![alt text]([http://url/to/img.png](https://i.imgur.com/dIJZJ8D.png)https://i.imgur.com/dIJZJ8D.png)
+- ![alt text](https://i.imgur.com/dIJZJ8D.png)
 
 
