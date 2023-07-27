@@ -3,13 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assessment", "Assessment\Assessment.csproj", "{C9F4E63B-B7EE-41DE-AA95-037454E72335}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Assessment", "Assessment\Assessment.csproj", "{C9F4E63B-B7EE-41DE-AA95-037454E72335}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assessment.Data", "Assessment.Data\Assessment.Data.csproj", "{778D1A95-4F19-4444-B929-36DA78F5B970}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Assessment.Data", "Assessment.Data\Assessment.Data.csproj", "{778D1A95-4F19-4444-B929-36DA78F5B970}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assessment.Entities", "Assessment.Entities\Assessment.Entities.csproj", "{E2293CE1-00EE-43BA-872C-32F3E6A8ED0F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Assessment.Entities", "Assessment.Entities\Assessment.Entities.csproj", "{E2293CE1-00EE-43BA-872C-32F3E6A8ED0F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assessment.Business", "Assessment.Business\Assessment.Business.csproj", "{E67AE5B8-8689-4025-B4AC-AC142579151F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Assessment.Business", "Assessment.Business\Assessment.Business.csproj", "{E67AE5B8-8689-4025-B4AC-AC142579151F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{86CC4857-A7AB-4DAE-AA7C-DA3D5698305F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assessment.Business.Tests", "Assessment.Business.Tests\Assessment.Business.Tests.csproj", "{AB06599E-19AC-4635-8741-5581FC79EC1D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,9 +37,16 @@ Global
 		{E67AE5B8-8689-4025-B4AC-AC142579151F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E67AE5B8-8689-4025-B4AC-AC142579151F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E67AE5B8-8689-4025-B4AC-AC142579151F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB06599E-19AC-4635-8741-5581FC79EC1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB06599E-19AC-4635-8741-5581FC79EC1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB06599E-19AC-4635-8741-5581FC79EC1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB06599E-19AC-4635-8741-5581FC79EC1D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{AB06599E-19AC-4635-8741-5581FC79EC1D} = {86CC4857-A7AB-4DAE-AA7C-DA3D5698305F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {AFA6823C-86AF-41F0-8700-49811A1142A6}
