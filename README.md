@@ -15,6 +15,6 @@
 - run multiple POST /api/reporting requests with startPoint: 1672531200, 1672534800, 1672538400, 1672542000 to feed some data
 
 **TESTS COVERAGE**
-- Assessment.Business
- ![image](https://github.com/quavoatl/Faptic.AssessmentTest/assets/45335304/4f4e2b96-9833-4934-851a-3d03981f3136)
+
+- ![image](https://github.com/quavoatl/Faptic.AssessmentTest/assets/45335304/4f4e2b96-9833-4934-851a-3d03981f3136)
 
