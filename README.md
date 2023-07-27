@@ -12,4 +12,4 @@
 - run command: docker run --publish 5000:80 assessment:dev
   
 **Easy test values**
-run multiple POST /api/reporting requests with startPoint: 1672531200, 1672534800, 1672538400, 1672542000 to feed some data
+- run multiple POST /api/reporting requests with startPoint: 1672531200, 1672534800, 1672538400, 1672542000 to feed some data
