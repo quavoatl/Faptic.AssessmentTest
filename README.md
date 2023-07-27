@@ -2,6 +2,7 @@
 
 # Installation steps:
  git clone [https://github.com/quavoatl/Faptic.AssessmentTest](https://github.com/quavoatl/Faptic.AssessmentTest.git)
+ 
  git checkout master
 
 # Running steps:
