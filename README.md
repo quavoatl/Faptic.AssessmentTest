@@ -16,5 +16,5 @@
 
 **TESTS COVERAGE**
 
-- ![image](https://github.com/quavoatl/Faptic.AssessmentTest/assets/45335304/4f4e2b96-9833-4934-851a-3d03981f3136)
+- https://i.imgur.com/dIJZJ8D.png
 
