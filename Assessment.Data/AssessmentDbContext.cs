@@ -4,6 +4,10 @@ namespace Assessment.Data
 {
     public class AssessmentDbContext : DbContext
     {
+        public AssessmentDbContext()
+        {
+        }
+
         public AssessmentDbContext(DbContextOptions<AssessmentDbContext> options)
             : base(options)
         {

@@ -1,4 +1,5 @@
 using Assessment.Business;
+using Assessment.Business.Validation;
 using Assessment.Entities;
 using Microsoft.AspNetCore.Mvc;
 
@@ -10,24 +11,31 @@ namespace Assessment.Controllers
     {
         private readonly ICloseDataIngestionService closeDataIngestionService;
         private readonly ICloseDataRetrievalService closeDataRetrievalService;
+        private readonly IFindCloseAggregateRequestValidator findCloseAggregateRequestValidator;
 
         public ReportingController(
             ICloseDataIngestionService closeDataIngestionService,
-            ICloseDataRetrievalService closeDataRetrievalService)
+            ICloseDataRetrievalService closeDataRetrievalService,
+            IFindCloseAggregateRequestValidator findCloseAggregateRequestValidator)
         {
             this.closeDataIngestionService = closeDataIngestionService;
             this.closeDataRetrievalService = closeDataRetrievalService;
+            this.findCloseAggregateRequestValidator = findCloseAggregateRequestValidator;
         }
 
         [HttpPost]
         public async Task<IActionResult> Post([FromBody] FindCloseAggregateRequest request)
         {
-            //request validator
-           
+            var validationResult = findCloseAggregateRequestValidator.ValidateRequest(request);
 
-            var result = await closeDataIngestionService.GetCloseDataAggregate(request);
+            if (string.IsNullOrEmpty(validationResult) == false)
+            {
+                return BadRequest(validationResult);
+            }
 
-            return Ok(result);
+            var aggregateResult = await closeDataIngestionService.GetCloseDataAggregate(request);
+
+            return Ok(aggregateResult);
         }
 
         [HttpGet("[action]/{startPoint}/{endPoint}")]
