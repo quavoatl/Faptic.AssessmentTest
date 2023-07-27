@@ -9,7 +9,9 @@
 - cd directory where Dockerfile is located
 - open powershell
 - run command: docker build -f "PathToDockerfile\Dockerfile" -t assessment:dev "PathToSlnFile"
+- example: docker build -f "C:\Users\User1\source\repos\Assessment\Dockerfile" -t assessment:dev "C:\Users\User1\source\repos\Assessment"
 - run command: docker run --publish 5000:80 assessment:dev
+- example: docker run --publish 5000:80 assessment:dev
   
 **Easy test values**
 - run multiple POST /api/reporting requests with startPoint: 1672531200, 1672534800, 1672538400, 1672542000 to feed some data
