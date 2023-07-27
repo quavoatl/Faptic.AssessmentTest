@@ -1,4 +1,4 @@
-# Faptic assessment solution
+# Faptic assessment solution (.NET 7 + InMemoryDatabase)
 
 **Installation steps:**
 - git clone [https://github.com/quavoatl/Faptic.AssessmentTest](https://github.com/quavoatl/Faptic.AssessmentTest.git)
