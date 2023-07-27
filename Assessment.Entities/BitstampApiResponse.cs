@@ -7,7 +7,7 @@
 
     public class Ohlc
     {
-        public int? Close { get; set; }
+        public double? Close { get; set; }
     }
 
     public class BitstampApiResponse
